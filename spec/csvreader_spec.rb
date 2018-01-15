@@ -3,7 +3,7 @@ require 'csvreader'
 
 describe "Csvreader" do
     before(:all) do
-        @csv = Csvreader.new("fitbit_data.csv")
+        @csv = Csvreader.new("csv/fitbit_data.csv")
     end
     it "should open file and return 2 dimentional array" do
         
