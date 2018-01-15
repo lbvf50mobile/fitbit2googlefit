@@ -1,7 +1,7 @@
 require_relative 'lib/csvreader'
 require 'benchmark'
 # get stat about the file
-file_path = "csv/fitbit_data_test_short.csv";
+file_path = "csv/fitbit_data.csv";
 p "Flie name %s" % file_path
 
 csv = 0
