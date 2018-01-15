@@ -16,4 +16,7 @@ describe "Csvreader" do
         expect(@stat.keys.include?(:rows_zero_amount)).to be true
         expect(@stat.keys.include?(:rows_steps_amount)).to be true
     end
+    it "amount of rows could no be zero" do
+        expect(@stat[:rows_amount]).not_to be_zero
+    end
 end
