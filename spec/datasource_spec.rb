@@ -5,8 +5,7 @@ describe "Datasource" do
     it "should create new data source" do
         @source = Datasource.new
         @source.set_tokey_value(TOKEN_VALUE)
-        expect(@source.create("New name").response.code).to be 200
+        expect(@source.create("New name").response.code).to be eq(200).and.not_to eq(400)
     end
 end
 
-# curl --header "Authorization: Bearer ya29.GltJBUFpINTuqdmrJE0JMNmj6YyWe6_SHmGC579xfLnjoc1aZlN8XV4lJ61zSUwV8L5T4Yhwu6wJ1qQ09X1CuzXU4SWrkOje_83SSgL7Alro9m2J3NdLwe1hqQyi -X POST  --header "Content-Type: application/json;encoding=utf-8" -d @createds.json "https://www.googleapis.com/fitness/v1/users/me/dataSources"
