@@ -24,7 +24,7 @@ class Datasource
             http.request(request)
         end
 
-        @response = ans.code
+        @response = ans
         self
     end
     def request_body name
