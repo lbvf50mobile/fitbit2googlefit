@@ -5,7 +5,7 @@ describe "Datasource" do
     it "should create new data source" do
         @source = Datasource.new
         @source.set_tokey_value(TOKEN_VALUE)
-        expect(@source.create("New name").response.code).to be eq(200).and.not_to eq(400)
+        expect(@source.create("New name").response.code).to be eq(200)
     end
 end
 
