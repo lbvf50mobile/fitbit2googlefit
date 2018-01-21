@@ -1,10 +1,12 @@
 require 'spec_helper'
 require 'datasource'
-
+TOKEN_VALUE = "GltJBUFpINTuqdmrJE0JMNmj6YyWe6_SHmGC579xfLnjoc1aZlN8XV4lJ61zSUwV8L5T4Yhwu6wJ1qQ09X1CuzXU4SWrkOje_83SSgL7Alro9m2J3NdLwe1hqQyi"
 describe "Datasource" do
     it "should create new data source" do
         @source = Datasource.new
-        @source.set_key("GltIBUaAmhYZ8aedTROW0xFG0CqK7BL8dvce-ekzLF8HoJ9N3H9tjPXx2y-CAhJTxDJq3o8tR3mZYY7C-QZT0uSQa67EIIbtJse4hFXOpwWQ9wuIDO5DubtbnKce")
-        expect(@source.create("New name").response).to be 200
+        @source.set_tokey_value(TOKEN_VALUE)
+        expect(@source.create("New name").response.code).to be 200
     end
 end
+
+# curl --header "Authorization: Bearer ya29.GltJBUFpINTuqdmrJE0JMNmj6YyWe6_SHmGC579xfLnjoc1aZlN8XV4lJ61zSUwV8L5T4Yhwu6wJ1qQ09X1CuzXU4SWrkOje_83SSgL7Alro9m2J3NdLwe1hqQyi -X POST  --header "Content-Type: application/json;encoding=utf-8" -d @createds.json "https://www.googleapis.com/fitness/v1/users/me/dataSources"
