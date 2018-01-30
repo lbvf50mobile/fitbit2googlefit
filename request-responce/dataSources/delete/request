@@ -1,0 +1,4 @@
+DELETE /fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:407408718192:test:01:03:Created%20from%20oAuthPlayground HTTP/1.1
+Host: www.googleapis.com
+Content-length: 0
+Authorization: Bearer ya29.GltSBa3_FER9fnUb21e8FvYlYFSLunloLRhYP14Wz9AQOFtxRulI5iiHb1uKMmSoHRljIEEJS467FHWePBvYc3eRRR8UmAXUrl_d6P0zeRm95JOkpB2tAznN60-7

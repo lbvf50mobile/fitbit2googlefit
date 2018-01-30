@@ -1,0 +1,41 @@
+HTTP/1.1 200 OK
+Content-length: 502
+X-xss-protection: 1; mode=block
+X-content-type-options: nosniff
+Transfer-encoding: chunked
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Vary: Origin, X-Origin
+Server: GSE
+Etag: "hkUK-z6QFzclcMEpYltVD3Tzs4M/SBAsMJT4yE4Ehg7EJQG0fGNdXuo"
+Pragma: no-cache
+Cache-control: no-cache, no-store, max-age=0, must-revalidate
+Date: Tue, 30 Jan 2018 13:20:22 GMT
+X-frame-options: SAMEORIGIN
+Alt-svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+Content-type: application/json; charset=UTF-8
+-content-encoding: gzip
+{
+  "dataStreamName": "Created from oAuthPlayground", 
+  "dataType": {
+    "field": [
+      {
+        "name": "steps", 
+        "format": "integer"
+      }
+    ], 
+    "name": "com.google.step_count.delta"
+  }, 
+  "dataQualityStandard": [], 
+  "application": {
+    "name": "testApp002"
+  }, 
+  "device": {
+    "model": "01", 
+    "version": "002", 
+    "type": "tablet", 
+    "uid": "03", 
+    "manufacturer": "test"
+  }, 
+  "dataStreamId": "derived:com.google.step_count.delta:407408718192:test:01:03:Created from oAuthPlayground", 
+  "type": "derived"
+}
