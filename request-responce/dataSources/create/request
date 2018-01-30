@@ -1,0 +1,28 @@
+POST /fitness/v1/users/me/dataSources HTTP/1.1
+Host: www.googleapis.com
+Content-length: 363
+Content-type: application/json
+Authorization: Bearer ya29.GltSBa3_FER9fnUb21e8FvYlYFSLunloLRhYP14Wz9AQOFtxRulI5iiHb1uKMmSoHRljIEEJS467FHWePBvYc3eRRR8UmAXUrl_d6P0zeRm95JOkpB2tAznN60-7
+{
+"dataStreamName": "Created from oAuthPlayground",
+ "application": {
+  "name": "testApp002"
+ },
+ "dataType": {
+  "field": [
+   {
+    "format": "integer",
+    "name": "steps"
+   }
+  ],
+  "name": "com.google.step_count.delta"
+ },
+ "device": {
+  "manufacturer": "test",
+  "model": "01",
+  "type": "tablet",
+  "uid": "03",
+  "version": "002"
+ },
+ "type": "derived"
+}
