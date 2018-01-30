@@ -1,0 +1,23 @@
+PATCH /fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:407408718192:Example%20Manufacturer:ExampleTablet:1000001:SupperTest22205/datasets/1517320084616000000-1517320084616000000 HTTP/1.1
+Host: www.googleapis.com
+Content-length: 485
+Content-type: application/json
+Authorization: Bearer ya29.GltSBUrf585aWnI_i7ehMNZ1WNIaiezTIM2bk2iF3H_ih629GBCGnpmo3gTgZIeSkiJpOo_IHgB2Y6Ga99Ston3T3GYFBOSeSYvqWfZw28EljLK8Y_4KHyucG0TQ
+{
+  "dataSourceId":
+      "derived:com.google.step_count.delta:407408718192:Example Manufacturer:ExampleTablet:1000001:SupperTest22205",
+  "maxEndTimeNs": 1517320084616000000,
+  "minStartTimeNs": 1517320084616000000,
+  "point": [
+    {
+      "dataTypeName": "com.google.step_count.delta",
+      "endTimeNanos": 1517320084616000000,
+      "originDataSourceId": "",
+      "startTimeNanos": 1517320084616000000,
+      "value": [
+        {
+          "intVal": 5
+        }
+      ]
+    }
+]}
