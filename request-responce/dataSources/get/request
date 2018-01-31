@@ -1,0 +1,4 @@
+GET /fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:407408718192:Example%20Manufacturer:ExampleTablet:1000001:SupperTest22205 HTTP/1.1
+Host: www.googleapis.com
+Content-length: 0
+Authorization: Bearer ya29.GltTBbd5GJxmt5qP1msuX60Y5WAd5rVayHaE3KCIiwhjalJAlL1o2YKFmEFP_e51Yb-cGljfLCS2pczZrWAL4AUEvegTF0VdnPmdVooeAuyydTgDAxivEd1DtWvq

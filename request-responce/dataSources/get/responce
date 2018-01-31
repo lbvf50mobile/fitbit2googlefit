@@ -1,0 +1,43 @@
+HTTP/1.1 200 OK
+Content-length: 601
+X-xss-protection: 1; mode=block
+Content-location: https://www.googleapis.com/fitness/v1/users/me/dataSources/derived:com.google.step_count.delta:407408718192:Example%20Manufacturer:ExampleTablet:1000001:SupperTest22205
+X-content-type-options: nosniff
+Transfer-encoding: chunked
+Expires: Wed, 31 Jan 2018 13:46:12 GMT
+Vary: Origin, X-Origin
+Server: GSE
+Etag: "hkUK-z6QFzclcMEpYltVD3Tzs4M/hwy1ztsU7w9K7UDFbQL0Lir_r70"
+Cache-control: private, max-age=0, must-revalidate, no-transform
+Date: Wed, 31 Jan 2018 13:46:12 GMT
+X-frame-options: SAMEORIGIN
+Alt-svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+Content-type: application/json; charset=UTF-8
+-content-encoding: gzip
+{
+  "dataStreamName": "SupperTest22205", 
+  "dataType": {
+    "field": [
+      {
+        "name": "steps", 
+        "format": "integer"
+      }
+    ], 
+    "name": "com.google.step_count.delta"
+  }, 
+  "dataQualityStandard": [], 
+  "application": {
+    "version": "1", 
+    "name": "Foo Example App", 
+    "detailsUrl": "http://example.com"
+  }, 
+  "device": {
+    "model": "ExampleTablet", 
+    "version": "1.0", 
+    "type": "tablet", 
+    "uid": "1000001", 
+    "manufacturer": "Example Manufacturer"
+  }, 
+  "dataStreamId": "derived:com.google.step_count.delta:407408718192:Example Manufacturer:ExampleTablet:1000001:SupperTest22205", 
+  "type": "derived"
+}
