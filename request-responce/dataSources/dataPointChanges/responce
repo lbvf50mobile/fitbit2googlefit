@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-length: 219
+X-xss-protection: 1; mode=block
+Content-location: https://www.googleapis.com/fitness/v1/users/me/dataSources/derived%3Acom.google.step_count.delta%3A407408718192%3AExample%2520Manufacturer%3AExampleTablet%3A1000001%3ASupperTest22205/dataPointChanges
+X-content-type-options: nosniff
+Transfer-encoding: chunked
+Expires: Thu, 01 Feb 2018 13:35:33 GMT
+Vary: Origin, X-Origin
+Server: GSE
+Etag: "hkUK-z6QFzclcMEpYltVD3Tzs4M/BCWkfmn8kbLmPgGspwbzGHWekco"
+Cache-control: private, max-age=0, must-revalidate, no-transform
+Date: Thu, 01 Feb 2018 13:35:33 GMT
+X-frame-options: SAMEORIGIN
+Alt-svc: hq=":443"; ma=2592000; quic=51303431; quic=51303339; quic=51303338; quic=51303337; quic=51303335,quic=":443"; ma=2592000; v="41,39,38,37,35"
+Content-type: application/json; charset=UTF-8
+-content-encoding: gzip
+{
+  "nextPageToken": "1517492133823", 
+  "deletedDataPoint": [], 
+  "dataSourceId": "derived:com.google.step_count.delta:407408718192:Example%20Manufacturer:ExampleTablet:1000001:SupperTest22205", 
+  "insertedDataPoint": []
+}
