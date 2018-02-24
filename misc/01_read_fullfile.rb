@@ -32,15 +32,11 @@ puts Benchmark.measure {
 
 # Read file
 # Marshal.load()
-p "REad file from Bin"
+p "REad file from Bin and Restore"
 puts Benchmark.measure {
-   bin =  File.read('bin/full_bib.dump')
+    File.open('bin/full_bib.dump', 'rb') { |f| csv_restored = Marshal::load(f) }
 }
 
-p "Restore file"
-puts Benchmark.measure {
-    csv_restored =  Marshal.load(bin)
-}
 
 p csv.size
 p csv_restored.size
