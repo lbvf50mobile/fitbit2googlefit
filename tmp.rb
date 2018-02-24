@@ -1,7 +1,18 @@
-require 'open-uri'
-require 'date'
-str = "derived:com.google.step_count.delta:407408718192:Example Manufacturer:ExampleTablet:1000001:SupperTest22205".force_encoding('ASCII-8BIT')
-puts URI::encode(str)
-p  DateTime.now.strftime('%Q').to_s.length
-p "1397515179728708316".length
-p  DateTime.now.strftime('%Q').to_s + ("0"*6)
+class MyError < StandardError
+    attr_reader :original
+    def initialize(msg, original=$!)
+        super(msg)
+        @original = original
+    end
+end
+
+begin
+   begin
+        raise "Error A"
+   rescue => error
+        raise MyError, "Error B"
+   end 
+rescue => error
+    p "Current failure: #{error.inspect}"
+    p "Original failure: #{error.original.inspect}"
+end
