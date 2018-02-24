@@ -24,7 +24,7 @@ describe "Just serialize" do
     it "serrialize save load restore shuld be equal to arr" do
         serialize = Marshal.dump(@csv)
         restored = nil
-        File.open(@dump_path, 'wb') { |f| f.write(Marshal.dump(serialize)) }
+        File.open(@dump_path, 'wb') { |f| f.write(serialize) }
         File.open(@dump_path, 'rb') { |f| restored = Marshal::load(f) }
         p @arr
         p restored

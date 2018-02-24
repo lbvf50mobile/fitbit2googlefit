@@ -27,7 +27,7 @@ puts Benchmark.measure {
 # Write file with binary
 p "Write dump"
 puts Benchmark.measure {
-    File.open('bin/full_bib.dump', 'wb') { |f| f.write(Marshal.dump(dump)) }
+    File.open('bin/full_bib.dump', 'wb') { |f| f.write(dump) }
 }
 
 # Read file
@@ -38,8 +38,4 @@ puts Benchmark.measure {
 }
 
 
-p csv.size
-p csv_restored.size
-p csv[4]
-p csv_restored.size[4]
-
+p "csv == csv_restored" %  (csv == csv_restored).inspect
